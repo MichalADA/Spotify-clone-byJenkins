@@ -167,16 +167,16 @@ sudo systemctl restart jenkins
 ```
 
 **Phase 4: Monitoring **
-
+`
     1.Install prometheus i had script for that
-
+    
     git clone  https://github.com/Michal-Devops/Spotify-clone-byJenkins.git
 
     cd Spotify-clone-byJenkins/monitoring 
     chmod +x install-prometheus.sh
     ./install-prometheus.sh
 
-
+   ``
     2.Install node-exporter from script 
 
     so 
@@ -195,7 +195,7 @@ sudo systemctl restart jenkins
      promtool check config /etc/prometheus/prometheus.yml
      curl -X POST http://localhost:9090/-/reload
 
-
+`
      3.Install Grafana
 
      I had script for that 
@@ -205,12 +205,12 @@ sudo systemctl restart jenkins
      ./grapfana.sh
      That will be acess on IP:3000 admin/admin
 
-
+`
     4. We need to add Jenkins Plugins to Prometheus 
-    ```
+    
         Go to manage jenkis , plugins , avaliable and find prometheus metrics 
 
-
+`
     5. Grafana Dashboards 
 
         We click imprort dashboard to node exporter we write id 1860
